@@ -7,6 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="./output.css" rel="stylesheet">
 
   <title>Frontend Mentor | Clipboard landing page</title>
 
@@ -23,73 +24,185 @@
   </style>
 </head>
 
-<body>
+<body class="flex flex-col justify-center items-center">
 
-  A history of everything you copy
+  <main class="flex flex-col justify-center items-center max-w-[21rem]">
+    <div class="w-full absolute flex justify-center top-0 -z-10">
+      <picture>
+        <source srcset="../images/bg-header-desktop.png" media="(min-width:48rem)">
 
-  Clipboard allows you to track and organize everything you
-  copy. Instantly access your clipboard on all your devices.
+        <img src="../images/bg-header-mobile.png" alt="">
+      </picture>
+    </div>
 
-  Download for iOS
-  Download for Mac
+    <div class="flex flex-col items-center gap-4 mb-40">
+      <img class="my-10" src="../images/logo.svg" alt="Logo">
 
-  Keep track of your snippets
+      <h1 class="font-semibold text-4xl text-center w-full"> A history of everything you copy</h1>
 
-  Clipboard instantly stores any item you copy in the cloud,
-  meaning you can access your snippets immediately on all your
-  devices. Our Mac and iOS apps will help you organize everything.
+      <p class="text-center opacity-40 mb-6 px-5">
+        Clipboard allows you to track and organize everything you
+        copy. Instantly access your clipboard on all your devices.
+      </p>
 
-  Quick Search
+      <div class="flex flex-col gap-6 items-stretch w-full">
+        <button class="bg-background-iOS p-3 rounded-full text-white text-xl">
+          Download for iOS
+        </button>
 
-  Easily search your snippets by content, category, web address, application, and more.
+        <button class="bg-background-Mac p-3 rounded-full text-white text-xl">
+          Download for Mac
+        </button>
+      </div>
+    </div>
 
-  iCloud Sync
+    <div class="flex flex-col items-center mb-52">
+      <h2 class="font-semibold text-4xl text-center mb-4"> Keep track of your snippets</h2>
 
-  Instantly saves and syncs snippets across all your devices.
+      <p class="text-center opacity-40 px-5">
+        Clipboard instantly stores any item you copy in the cloud,
+        meaning you can access your snippets immediately on all your
+        devices. Our Mac and iOS apps will help you organize everything.
+      </p>
 
-  Complete History
+      <img class="my-10" src="../images/image-computer.png" alt="Computer">
 
-  Retrieve any snippets from the first moment you started using the app.
+      <h3 class="font-semibold text-2xl mb-3">Quick Search</h3>
 
-  Access Clipboard anywhere
+      <p class="text-center opacity-40 px-4 mb-10">
+        Easily search your snippets by content,
+        category, web address, application, and more.
+      </p>
 
-  Whether you’re on the go, or at your computer, you can access all your Clipboard
-  snippets in a few simple clicks.
+      <h3 class="font-semibold text-2xl mb-3"> iCloud Sync</h3>
 
-  Supercharge your workflow
+      <p class="text-center opacity-40 px-8 mb-10">
+        Instantly saves and syncs snippets across all your devices.
+      </p>
 
-  We’ve got the tools to boost your productivity.
+      <h3 class="font-semibold text-2xl mb-3"> Complete History</h3>
 
-  Create blacklists
+      <p class="text-center opacity-40 px-4">
+        Retrieve any snippets from the first moment you started using the app.
+      </p>
 
-  Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+    </div>
 
-  Plain text snippets
+    <div class="flex flex-col items-center">
+      <h2 class="text-center font-semibold text-4xl mb-4"> Access Clipboard anywhere </h2>
 
-  Remove unwanted formatting from copied text for a consistent look.
+      <p class="text-center opacity-40 px-4">
+        Whether you’re on the go, or at your computer, you can access all your Clipboard
+        snippets in a few simple clicks.
+      </p>
 
-  Sneak preview
+      <img class="mb-40 mt-10" src="../images/image-devices.png" alt="Devices">
+    </div>
 
-  Quick preview of all snippets on your Clipboard for easy access.
+    <div class="flex flex-col items-center">
+      <h2 class="text-center font-semibold text-4xl mb-4">Supercharge your workflow</h2>
 
-  Clipboard for iOS and Mac OS
+      <p class="text-center opacity-40 px-4 mb-16">
+        We’ve got the tools to boost your productivity.
+      </p>
 
-  Available for free on the App Store. Download for Mac or iOS, sync with iCloud
-  and you’re ready to start adding to your clipboard.
+      <div class="flex flex-col items-center">
+        <img class="my-6" src="../images/icon-blacklist.svg" alt="blacklist-icon">
 
-  Download for iOS
-  Download for Mac
+        <h3 class="text-2xl text-center font-semibold mb-4"> Create blacklists</h3>
 
-  FAQs
-  Contact Us
-  Privacy Policy
-  Press Kit
-  Install Guide
+        <p class="text-center opacity-40 px-4">
+          Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+        </p>
+      </div>
 
-  <footer>
+      <div class="flex flex-col items-center">
+        <img class="my-12" src="../images/icon-text.svg" alt="text-icon">
+
+        <h3 class="text-2xl text-center font-semibold mb-4"> Plain text snippets</h3>
+
+        <p class="text-center opacity-40 px-4">
+          Remove unwanted formatting from copied text for a consistent look.
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img class="my-12" src="../images/icon-preview.svg" alt="preview-icon">
+
+        <h3 class="text-2xl text-center font-semibold mb-4"> Sneak preview</h3>
+
+        <p class="text-center opacity-40 px-4">
+          Quick preview of all snippets on your Clipboard for easy access.
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center w-28 gap-10 my-24">
+        <img src="../images/logo-google.png" alt="logo-google">
+        <img src="../images/logo-ibm.png" alt="logo-ibm">
+        <img src="../images/logo-microsoft.png" alt="logo-microsoft">
+        <img src="../images/logo-hp.png" alt="logo-hp">
+        <img src="../images/logo-vector-graphics.png" alt="logo-vector-graphics">
+      </div>
+
+    </div>
+
+    <div class="flex flex-col items-center">
+      <h2 class="text-center font-semibold text-4xl mb-4">Clipboard for iOS and Mac OS</h2>
+
+      <p class="text-center opacity-40 px-5 mb-8">
+        Available for free on the App Store. Download for Mac or iOS, sync with iCloud
+        and you’re ready to start adding to your clipboard.
+      </p>
+
+      <div class="flex flex-col gap-6 items-stretch w-full mb-40">
+        <button class="bg-background-iOS p-3 rounded-full text-white text-xl">
+          Download for iOS
+        </button>
+
+        <button class="bg-background-Mac p-3 rounded-full text-white text-xl">
+          Download for Mac
+        </button>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="bg-[#f5f6f8] flex flex-col items-center w-full">
+    <img class="w-14 my-10" src="../images/logo.svg" alt="Logo">
+
+    <div class="flex flex-col items-center gap-6 opacity-70 mb-8">
+      <a href="#">
+        FAQs
+      </a>
+      <a href="#">
+        Contact Us
+      </a>
+      <a href="#">
+        Privacy Policy
+      </a>
+      <a href="#">
+        Press Kit
+      </a>
+      <a href="#">
+        Install Guide
+      </a>
+    </div>
+
+    <div class="flex items-center gap-10 mb-8">
+      <a href="#">
+        <img src="../images/icon-facebook.svg" alt="facebook">
+      </a>
+      <a href="#">
+        <img src="../images/icon-twitter.svg" alt="twitter">
+      </a>
+      <a href="#">
+        <img src="../images/icon-instagram.svg" alt="instagram">
+      </a>
+    </div>
+
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Mazen Hassan</a>.
     </p>
   </footer>
 </body>
