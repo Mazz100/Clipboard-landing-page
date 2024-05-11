@@ -1,15 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content:
+    [
+      "./src/**/*.{html,js}",
+      './index.html',
+    ],
   theme: {
-    backgroundColor:{
+    backgroundColor: {
       "background-iOS": "#26baa4",
       "background-Mac": "#6173ff",
     },
-    
-    /*boxShadowColor:{
-      "iOS-shadow":
-    }*/
 
 
     extend: {},
