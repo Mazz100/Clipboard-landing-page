@@ -21,25 +21,13 @@
     />
 
     <title>Frontend Mentor | Clipboard landing page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
 
   <body
-    class="flex flex-col justify-center items-center lg:items-stretch font-Bai-Jamjuree"
+    class="flex flex-col justify-center items-center lg:items-stretch font-Bai-Jamjuree scroll"
   >
     <main
-      class="flex flex-col justify-center items-center max-w-[21rem] lg:max-w-none"
+      class="flex flex-col justify-center items-center lg:items-stretch max-w-[21rem] md:max-w-[34rem] lg:max-w-none"
     >
       <div class="w-full absolute flex justify-center top-0 -z-10">
         <picture>
@@ -48,7 +36,7 @@
             media="(min-width:48rem)"
           />
 
-          <img src="./images/bg-header-mobile.png" alt="" />
+          <img class="w-full" src="./images/bg-header-mobile.png" alt="" />
         </picture>
       </div>
 
@@ -59,22 +47,24 @@
           A history of everything you copy
         </h1>
 
-        <p class="text-center opacity-40 mb-6 px-5">
+        <p class="text-center opacity-50 mb-6 px-5">
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
 
         <div
-          class="flex flex-col gap-6 items-stretch w-full lg:flex-row lg:gap-4 lg:justify-center"
+          class="flex flex-col gap-6 items-stretch w-full lg:flex-row lg:gap-10 lg:justify-center"
         >
           <button
-            class="bg-background-iOS p-3 md:px-10 rounded-full border-b-[3px] border-iOS-border-color text-white text-xl shadow-iOS-shadow"
+            class="bg-background-iOS p-3 md:px-10 rounded-full border-b-[3px] hover:bg-hover-iOS transition-colors duration-150 ease-in border-iOS-border-color text-white text-xl shadow-iOS-shadow"
+            type="button"
           >
             Download for iOS
           </button>
 
           <button
-            class="bg-background-Mac p-3 md:px-10 rounded-full border-b-[3px] border-Mac-border-color text-white text-xl shadow-Mac-shadow"
+            class="bg-background-Mac p-3 md:px-10 rounded-full border-b-[3px] hover:bg-hover-Mac transition-colors duration-150 ease-in border-Mac-border-color text-white text-xl shadow-Mac-shadow"
+            type="button"
           >
             Download for Mac
           </button>
@@ -86,7 +76,7 @@
           Keep track of your snippets
         </h2>
 
-        <p class="text-center opacity-40 px-5">
+        <p class="text-center opacity-50 px-5">
           Clipboard instantly stores any item you copy in the cloud, meaning you
           can access your snippets immediately on all your devices. Our Mac and
           iOS apps will help you organize everything.
@@ -98,20 +88,20 @@
           <div class="flex flex-col items-center lg:items-start">
             <h3 class="font-semibold text-2xl mb-3">Quick Search</h3>
 
-            <p class="text-center lg:text-start opacity-40 px-4 lg:px-0 mb-10">
+            <p class="text-center lg:text-start opacity-50 px-4 lg:px-0 mb-10">
               Easily search your snippets by content, category, web address,
               application, and more.
             </p>
 
             <h3 class="font-semibold text-2xl mb-3">iCloud Sync</h3>
 
-            <p class="text-center lg:text-start opacity-40 px-8 lg:px-0 mb-10">
+            <p class="text-center lg:text-start opacity-50 px-8 lg:px-0 mb-10">
               Instantly saves and syncs snippets across all your devices.
             </p>
 
             <h3 class="font-semibold text-2xl mb-3">Complete History</h3>
 
-            <p class="text-center lg:text-start opacity-40 px-4 lg:px-0">
+            <p class="text-center lg:text-start opacity-50 px-4 lg:px-0">
               Retrieve any snippets from the first moment you started using the
               app.
             </p>
@@ -124,7 +114,7 @@
           Access Clipboard anywhere
         </h2>
 
-        <p class="text-center opacity-40 px-4">
+        <p class="text-center opacity-50 px-4">
           Whether you’re on the go, or at your computer, you can access all your
           Clipboard snippets in a few simple clicks.
         </p>
@@ -141,11 +131,13 @@
           Supercharge your workflow
         </h2>
 
-        <p class="text-center opacity-40 px-4 mb-16">
+        <p class="text-center opacity-50 px-4 mb-16">
           We’ve got the tools to boost your productivity.
         </p>
 
-        <div class="lg:flex lg:items-center lg:gap-12">
+        <div
+          class="lg:grid lg:grid-cols-3 lg:place-content-center lg:place-items-center"
+        >
           <div class="flex flex-col items-center">
             <img
               class="my-6 lg:my-12"
@@ -157,7 +149,7 @@
               Create blacklists
             </h3>
 
-            <p class="text-center opacity-40 px-4 lg:px-0">
+            <p class="text-center opacity-50 px-4 lg:px-0">
               Ensure sensitive information never makes its way to your clipboard
               by excluding certain sources.
             </p>
@@ -170,7 +162,7 @@
               Plain text snippets
             </h3>
 
-            <p class="text-center opacity-40 px-4 lg:px-0">
+            <p class="text-center opacity-50 px-4 lg:px-0">
               Remove unwanted formatting from copied text for a consistent look.
             </p>
           </div>
@@ -186,7 +178,7 @@
               Sneak preview
             </h3>
 
-            <p class="text-center opacity-40 px-4 lg:px-0">
+            <p class="text-center opacity-50 px-4 lg:px-0">
               Quick preview of all snippets on your Clipboard for easy access.
             </p>
           </div>
@@ -211,22 +203,24 @@
           Clipboard for iOS and Mac OS
         </h2>
 
-        <p class="text-center opacity-40 px-5 mb-8">
+        <p class="text-center opacity-50 px-5 mb-8">
           Available for free on the App Store. Download for Mac or iOS, sync
           with iCloud and you’re ready to start adding to your clipboard.
         </p>
 
         <div
-          class="flex flex-col gap-6 items-stretch w-full lg:flex-row lg:gap-4 lg:justify-center"
+          class="flex flex-col gap-6 items-stretch w-full lg:flex-row lg:gap-10 lg:justify-center"
         >
           <button
-            class="p-3 bg-background-iOS md:px-10 rounded-full border-b-[3px] border-iOS-border-color text-white text-xl shadow-iOS-shadow"
+            class="bg-background-iOS p-3 md:px-10 rounded-full border-b-[3px] hover:bg-hover-iOS transition-colors duration-150 ease-in border-iOS-border-color text-white text-xl shadow-iOS-shadow"
+            type="button"
           >
             Download for iOS
           </button>
 
           <button
-            class="bg-background-Mac p-3 md:px-10 rounded-full border-b-[3px] border-Mac-border-color text-white text-xl shadow-Mac-shadow"
+            class="bg-background-Mac p-3 md:px-10 rounded-full border-b-[3px] hover:bg-hover-Mac transition-colors duration-150 ease-in border-Mac-border-color text-white text-xl shadow-Mac-shadow"
+            type="button"
           >
             Download for Mac
           </button>
@@ -235,38 +229,84 @@
     </main>
 
     <footer
-      class="bg-[#f5f6f8] flex flex-col lg:flex-row lg:justify-around mt-40 pt-20 items-center w-full"
+      class="bg-[#f5f6f8] flex flex-col items-center lg:flex-row lg:justify-around mt-40 pt-20 relative w-full"
     >
       <img class="w-14 mb-10" src="./images/logo.svg" alt="Logo" />
 
       <div
         class="flex flex-col lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:place-content-center items-center gap-6 opacity-70 mb-8"
       >
-        <a href="#"> FAQs </a>
-        <a href="#"> Contact Us </a>
-        <a href="#"> Privacy Policy </a>
-        <a href="#"> Press Kit </a>
-        <a href="#"> Install Guide </a>
+        <a
+          class="hover:text-hover-links transition-colors duration-150"
+          href="#"
+        >
+          FAQs
+        </a>
+        <a
+          class="hover:text-hover-links transition-colors duration-150"
+          href="#"
+        >
+          Contact Us
+        </a>
+        <a
+          class="hover:text-hover-links transition-colors duration-150"
+          href="#"
+        >
+          Privacy Policy
+        </a>
+        <a
+          class="hover:text-hover-links transition-colors duration-150"
+          href="#"
+        >
+          Press Kit
+        </a>
+        <a
+          class="hover:text-hover-links transition-colors duration-150"
+          href="#"
+        >
+          Install Guide
+        </a>
       </div>
 
       <div class="flex items-center gap-10 mb-8">
         <a href="#">
-          <img src="./images/icon-facebook.svg" alt="facebook" />
+          <ion-icon
+            class="text-3xl hover:text-hover-links"
+            name="logo-facebook"
+          ></ion-icon>
         </a>
         <a href="#">
-          <img src="./images/icon-twitter.svg" alt="twitter" />
+          <ion-icon
+            class="text-3xl hover:text-hover-links"
+            name="logo-twitter"
+          ></ion-icon>
         </a>
         <a href="#">
-          <img src="./images/icon-instagram.svg" alt="instagram" />
+          <ion-icon
+            class="text-3xl hover:text-hover-links"
+            name="logo-instagram"
+          ></ion-icon>
         </a>
       </div>
+
+      <p class="text-center text-balance text-sm absolute bottom-0">
+        Challenge by
+        <a
+          class="text-[#3e52a3]"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Mazz100">Mazen Hassan</a>.
+      </p>
     </footer>
 
-    <p class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/Mazz100">Mazen Hassan</a>.
-    </p>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

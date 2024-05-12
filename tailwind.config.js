@@ -25,11 +25,12 @@ module.exports = {
       backgroundColor: {
         "hover-iOS": "#5dccbb",
         "hover-Mac": "#8896ff",
+        "hover-socials": "#26baa4",
       },
 
       colors: {
         "hover-links": "#26baa4",
-      }
+      },
     },
   },
   plugins: [],
