@@ -12,8 +12,6 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
     - [Built with](#built-with)
     - [Continued development](#continued-development)
 
-
-
 ### The challenge
 
 Users should be able to:
@@ -26,12 +24,10 @@ Users should be able to:
 ![](./desktop-clipboard.png)
 ![](./mobile-clipboard.png)
 
-
 ### Links
 
 - Solution URL: [Solution Link](https://www.frontendmentor.io/solutions/clipboard-landing-page-with-tailwind-css-qUYQEpQKii)
 - Live Site URL: [Live Link](https://mazz100.github.io/Clipboard-landing-page/)
-
 
 ### Built with
 
@@ -41,7 +37,6 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [Tailwind CSS](https://tailwindcss.com/docs/installation)
-
 
 ### Continued development
 

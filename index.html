@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,14 +23,12 @@
     <title>Frontend Mentor | Clipboard landing page</title>
   </head>
 
-  <body
-    class="flex flex-col justify-center items-center lg:items-stretch font-Bai-Jamjuree scroll"
-  >
+  <body class="flex flex-col justify-center items-center font-Bai-Jamjuree">
     <main
-      class="flex flex-col justify-center items-center lg:items-stretch max-w-[21rem] md:max-w-[34rem] lg:max-w-none"
+      class="flex flex-col justify-center items-center max-w-[21rem] md:max-w-[34rem] lg:max-w-none"
     >
       <div class="w-full absolute flex justify-center top-0 -z-10">
-        <picture>
+        <picture class="w-full">
           <source
             srcset="./images/bg-header-desktop.png"
             media="(min-width:48rem)"
@@ -41,13 +39,13 @@
       </div>
 
       <div class="flex flex-col items-center gap-4 mb-40 lg:p-12">
-        <img class="my-10" src="./images/logo.svg" alt="Logo" />
+        <img class="my-10" src="./images/logo.svg" alt="Clipboard Logo" />
 
-        <h1 class="font-semibold text-4xl text-center w-full">
+        <h1 class="font-semibold text-4xl text-center">
           A history of everything you copy
         </h1>
 
-        <p class="text-center opacity-50 mb-6 px-5">
+        <p class="text-center opacity-50 mb-6 px-5 lg:px-0 lg:max-w-[54ch]">
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
@@ -55,19 +53,21 @@
         <div
           class="flex flex-col gap-6 items-stretch w-full lg:flex-row lg:gap-10 lg:justify-center"
         >
-          <button
-            class="bg-background-iOS p-3 md:px-10 rounded-full border-b-[3px] hover:bg-hover-iOS transition-colors duration-150 ease-in border-iOS-border-color text-white text-xl shadow-iOS-shadow"
-            type="button"
+          <a
+            href="#"
+            download
+            class="bg-background-iOS p-3 text-center md:px-10 rounded-full border-b-[3px] hover:bg-hover-iOS transition-colors duration-150 ease-in border-iOS-border-color text-white text-xl shadow-iOS-shadow"
           >
             Download for iOS
-          </button>
+          </a>
 
-          <button
-            class="bg-background-Mac p-3 md:px-10 rounded-full border-b-[3px] hover:bg-hover-Mac transition-colors duration-150 ease-in border-Mac-border-color text-white text-xl shadow-Mac-shadow"
-            type="button"
+          <a
+            href="#"
+            download
+            class="bg-background-Mac p-3 text-center md:px-10 rounded-full border-b-[3px] hover:bg-hover-Mac transition-colors duration-150 ease-in border-Mac-border-color text-white text-xl shadow-Mac-shadow"
           >
             Download for Mac
-          </button>
+          </a>
         </div>
       </div>
 
@@ -76,7 +76,7 @@
           Keep track of your snippets
         </h2>
 
-        <p class="text-center opacity-50 px-5">
+        <p class="text-center opacity-50 px-5 lg:px-0 lg:max-w-[60ch]">
           Clipboard instantly stores any item you copy in the cloud, meaning you
           can access your snippets immediately on all your devices. Our Mac and
           iOS apps will help you organize everything.
@@ -88,20 +88,26 @@
           <div class="flex flex-col items-center lg:items-start">
             <h3 class="font-semibold text-2xl mb-3">Quick Search</h3>
 
-            <p class="text-center lg:text-start opacity-50 px-4 lg:px-0 mb-10">
+            <p
+              class="text-center text-balance lg:text-start opacity-50 px-4 lg:px-0 max-w-[50ch] mb-10"
+            >
               Easily search your snippets by content, category, web address,
               application, and more.
             </p>
 
             <h3 class="font-semibold text-2xl mb-3">iCloud Sync</h3>
 
-            <p class="text-center lg:text-start opacity-50 px-8 lg:px-0 mb-10">
+            <p
+              class="text-center lg:text-start opacity-50 px-8 lg:px-0 max-w-[50ch] mb-10"
+            >
               Instantly saves and syncs snippets across all your devices.
             </p>
 
             <h3 class="font-semibold text-2xl mb-3">Complete History</h3>
 
-            <p class="text-center lg:text-start opacity-50 px-4 lg:px-0">
+            <p
+              class="text-center lg:text-start opacity-50 px-4 lg:px-0 max-w-[50ch]"
+            >
               Retrieve any snippets from the first moment you started using the
               app.
             </p>
@@ -114,7 +120,7 @@
           Access Clipboard anywhere
         </h2>
 
-        <p class="text-center opacity-50 px-4">
+        <p class="text-center opacity-50 px-4 lg:px-0 lg:max-w-[60ch]">
           Whether you’re on the go, or at your computer, you can access all your
           Clipboard snippets in a few simple clicks.
         </p>
@@ -131,12 +137,12 @@
           Supercharge your workflow
         </h2>
 
-        <p class="text-center opacity-50 px-4 mb-16">
+        <p class="text-center opacity-50 px-4 lg:px-0 mb-16">
           We’ve got the tools to boost your productivity.
         </p>
 
         <div
-          class="lg:grid lg:grid-cols-3 lg:place-content-center lg:place-items-center"
+          class="lg:grid lg:grid-cols-3 lg:place-content-between lg:place-items-center lg:gap-12"
         >
           <div class="flex flex-col items-center">
             <img
@@ -149,7 +155,7 @@
               Create blacklists
             </h3>
 
-            <p class="text-center opacity-50 px-4 lg:px-0">
+            <p class="text-center opacity-50 px-4 lg:px-0 lg:max-w-[32ch]">
               Ensure sensitive information never makes its way to your clipboard
               by excluding certain sources.
             </p>
@@ -162,7 +168,7 @@
               Plain text snippets
             </h3>
 
-            <p class="text-center opacity-50 px-4 lg:px-0">
+            <p class="text-center opacity-50 px-4 lg:px-0 lg:max-w-[35ch]">
               Remove unwanted formatting from copied text for a consistent look.
             </p>
           </div>
@@ -178,23 +184,47 @@
               Sneak preview
             </h3>
 
-            <p class="text-center opacity-50 px-4 lg:px-0">
+            <p class="text-center opacity-50 px-4 lg:px-0 lg:max-w-[35ch]">
               Quick preview of all snippets on your Clipboard for easy access.
             </p>
           </div>
         </div>
 
-        <div
-          class="flex flex-col items-center w-28 gap-10 my-24 lg:flex-row lg:justify-around lg:w-full"
-        >
-          <img src="./images/logo-google.png" alt="logo-google" />
-          <img src="./images/logo-ibm.png" alt="logo-ibm" />
-          <img src="./images/logo-microsoft.png" alt="logo-microsoft" />
-          <img src="./images/logo-hp.png" alt="logo-hp" />
-          <img
-            src="./images/logo-vector-graphics.png"
-            alt="logo-vector-graphics"
-          />
+        <div class="w-28 my-24 lg:w-full">
+          <ul
+            class="flex flex-col items-center gap-10 lg:flex-row lg:justify-around"
+          >
+            <li>
+              <img
+                src="./images/logo-google.png"
+                alt="https://www.google.com/"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/logo-ibm.png"
+                alt="https://www.ibm.com/us-en"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/logo-microsoft.png"
+                alt="https://www.microsoft.com/en-us/"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/logo-hp.png"
+                alt="https://www.hp.com/us-en/home.html"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/logo-vector-graphics.png"
+                alt="vector graphics"
+              />
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -211,19 +241,23 @@
         <div
           class="flex flex-col gap-6 items-stretch w-full lg:flex-row lg:gap-10 lg:justify-center"
         >
-          <button
+          <a
+            href="#"
+            download
+            id="iOS-download"
             class="bg-background-iOS p-3 md:px-10 rounded-full border-b-[3px] hover:bg-hover-iOS transition-colors duration-150 ease-in border-iOS-border-color text-white text-xl shadow-iOS-shadow"
-            type="button"
           >
             Download for iOS
-          </button>
+          </a>
 
-          <button
+          <a
+            href="#"
+            download
+            id="Mac-download"
             class="bg-background-Mac p-3 md:px-10 rounded-full border-b-[3px] hover:bg-hover-Mac transition-colors duration-150 ease-in border-Mac-border-color text-white text-xl shadow-Mac-shadow"
-            type="button"
           >
             Download for Mac
-          </button>
+          </a>
         </div>
       </div>
     </main>
@@ -231,10 +265,11 @@
     <footer
       class="bg-[#f5f6f8] flex flex-col items-center lg:flex-row lg:justify-around mt-40 pt-20 relative w-full"
     >
-      <img class="w-14 mb-10" src="./images/logo.svg" alt="Logo" />
+      <img class="w-14 mb-10" src="./images/logo.svg" alt="Clipboard Logo" />
 
-      <div
+      <nav
         class="flex flex-col lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:place-content-center items-center gap-6 opacity-70 mb-8"
+        aria-label="footer"
       >
         <a
           class="hover:text-hover-links transition-colors duration-150"
@@ -266,25 +301,28 @@
         >
           Install Guide
         </a>
-      </div>
+      </nav>
 
       <div class="flex items-center gap-10 mb-8">
-        <a href="#">
+        <a href="#" aria-label="facebook">
           <ion-icon
             class="text-3xl hover:text-hover-links"
             name="logo-facebook"
+            aria-hidden="true"
           ></ion-icon>
         </a>
-        <a href="#">
+        <a href="#" aria-label="twitter">
           <ion-icon
             class="text-3xl hover:text-hover-links"
             name="logo-twitter"
+            aria-hidden="true"
           ></ion-icon>
         </a>
-        <a href="#">
+        <a href="#" aria-label="instagram">
           <ion-icon
             class="text-3xl hover:text-hover-links"
             name="logo-instagram"
+            aria-hidden="true"
           ></ion-icon>
         </a>
       </div>
@@ -292,11 +330,16 @@
       <p class="text-center text-balance text-sm absolute bottom-0">
         Challenge by
         <a
-          class="text-[#3e52a3]"
+          class="text-[#3e52a3] hover:underline hover:font-semibold"
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/Mazz100">Mazen Hassan</a>.
+        >. Coded by
+        <a
+          class="text-[#3e52a3] hover:underline hover:font-semibold"
+          href="https://github.com/Mazz100"
+          >Mazen Hassan</a
+        >.
       </p>
     </footer>
 
